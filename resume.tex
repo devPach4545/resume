@@ -1,0 +1,227 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.6in}
+\addtolength{\textheight}{1.2in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Large \scshape Dhaivat Pachchigar} \\ \vspace{1pt}
+    \small 909-670-8973 $|$ \href{dhaivatpachchigar@gmail.com}{\underline{dhaivatpachchigar@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/dhaivat-pachchigar-b58493242/}{\underline{linkedin.com/in/Dev}}
+     $|$
+    \href{https://github.com/devPach4545}{\underline{GitHub Profile}}
+    
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of California, San Diego}{La Jolla, CA}
+      {Bachelor of Science, Computer Science \textbf{GPA: 3.7 }(Regents Scholar)}{September 2022 -- June 2025}
+   
+  \resumeSubHeadingListEnd
+
+    
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Full Stack -  Task Manager} $|$ \emph{ Next.js, SpringBoot, Mysql, Material-UI, Tailwind CSS, Redux, Junit }}
+          
+          \resumeItemListStart
+          
+           \resumeItem{Engineered a full-stack task management web app using \textbf{React} for the frontend and \textbf{Spring Boot} for the backend, allowing admins to assign tasks to users and users to submit their tasks}
+           \resumeItem{Employed a \textbf{microservices architecture} to separate \textbf{User}, \textbf{Task}, and \textbf{Submission} functionalities.}
+            \resumeItem{Applied \textbf{Redux Toolkit} for efficient \textbf{state management} and integrated \textbf{Thunk} as middleware to streamline data handling between components using \textbf{Eureka Server}}
+            \resumeItem{Implemented task features, including creation, assignment, updating, deletion, and filtering, to enhance task management capabilities. }
+            \resumeItem{Utilized \textbf{MySQL} for data storage and management, ensuring reliable data retrieval and consistency.}
+            
+            \resumeItem{Secured the application with \textbf{JWT authentication} and \textbf{role-based permissions} to safeguard user data and maintain access control.}
+
+          \resumeItemListEnd
+          
+    
+
+
+        \resumeProjectHeading
+{\textbf{Full Stack - Social Media Website} $|$ \emph{React.Js, Java, Spring Boot, MySQL, Material-UI, Redux, Tailwind CSS, JUnit}}
+
+\resumeItemListStart
+  \resumeItem{Built a comprehensive \textbf{full-stack web application} using \textbf{React} for the frontend and \textbf{Spring Boot} for the backend.}
+  \resumeItem{Integrated \textbf{ Redux} as a \textbf{state management system} and \textbf{Thunk} as \textbf{middleware} to ensure seamless data flow and optimized performance.}
+  \resumeItem{Developed and integrated features such as user account creation, post creation, and designed functionality for commenting and liking posts.}
+  \resumeItem{Devised\textbf{ real-time chat functionality} using \textbf{WebSocket} technology to enhance user experience.}
+  \resumeItem{Designed \textbf{JWT-based authentication} in a \textbf{stateless application}, securing \textbf{API endpoints} with \textbf{custom filters} and configuring \textbf{CORS} for \textbf{frontend integration}.}
+ 
+
+            
+          \resumeItemListEnd
+
+     \resumeProjectHeading{\textbf{Web Journal - A Journal for Software Developers} $|$ \emph{HTML, CSS, Javascript, Electron.js, Puppeteer}}
+
+    \resumeItemListStart
+    \resumeItem{Collaborated with a team of 10 fellow students to build a desktop application designed to help developers efficiently track their work and goals.}
+\resumeItem{Leveraged \textbf{Electron.js} to ensure compatibility across Windows, MacOS, and Linux without internet connection.}
+\resumeItem{Designed features such as a fully navigable \textbf{calendar} with major holidays, a \textbf{markdown-supported notes page}, a \textbf{to-do list} for long-term goal tracking, and a \textbf{labeling system} for efficient work organization.}
+\resumeItem{Wrote test cases using puppeteer to ensure the best user experience}
+
+    \resumeItemListEnd
+    
+
+         \resumeProjectHeading{\textbf{AI Chatbot for Real-Time Stock Market Data} $|$ \emph{Next.js, Tailwind CSS, Javascript, Java, SpringBoot}}
+
+    \resumeItemListStart
+\resumeItem{Architected a real-tiome AI chatbot Using \textbf{Gemini AI} and \textbf{Alpha Vantage API} for stock market, giving users access to the most recent financial insights.
+}
+\resumeItem{To manage API requests, set up a \textbf{Spring Boot} as the backend.
+}
+\resumeItem{Built a \textbf{responsive frontend} with \textbf{Next.js} and used \textbf{Tailwind CSS} for styling, utilized  \textbf{TS Particles} to enhance user experience. }
+\resumeItem{Deployed the application for live use, enabling access to stock market data through a polished and interactive interface.}
+
+    \resumeItemListEnd
+    
+
+    
+
+    
+
+%-----------Experience---------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Help Desk Assistant}{June 2024-September 2024}
+      {}{Phoenix, AZ}
+       \resumeItemListStart
+            \resumeItem{ Provided technical support for over 70-room motel, managing check-in/out software, troubleshooting hardware/software issues, and ensuring smooth operation of front desk systems. }
+            \resumeItem{Helped in training staff on computer systems, resolving IT-related queries, and maintaining secure, efficient network connectivity for both staff and guest use.}
+            
+      
+      \resumeItemListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+
+\section{Skills and Technologies}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Java, JavaScript, Python, HTML} \\
+     \textbf{Developer Tools}{: Git, GitHub, } \\
+     \textbf{Libraries}{: SpringBoot, React.js, Next.js, Tailwind CSS}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
